@@ -1,0 +1,31 @@
+/* này là font chữ */
+@import url(./font.css);
+/* boostrap */
+@import url(../../vender/boostrap-5/css/bootstrap.min.css);
+/* icons */
+@import url(../../vender/icons/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css);
+/* này là các biến cho thiết kế */
+@import url(./root.css);
+/* này là header và footer */
+@import url(./partials.css);
+/* này là css trang chủ */
+@import url(./main-page.css);
+/* này là trang tài khoản */
+@import url(./auth.css);
+/* này là trang phản hồi */
+@import url(./feedback.css);
+/* này là trang món ăn */
+@import url(./foods.css);
+/* này là trang yêu thích */
+@import url(./favorite.css);
+/* này là trang địa điểm */
+@import url(./location.css);
+/* này là của trang vote */
+@import url(./vote.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "cabin";
+}

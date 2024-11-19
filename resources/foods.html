@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="shortcut icon" href="../img/logo-1.jpg" type="image/x-icon" />
+    <title>Món ăn</title>
+  </head>
+  <body>
+    <head>
+      <nav class="navbar">
+        <a href="../index.html" class="nav-logo">
+          <img src="../img/logo-1.jpg" alt="" />
+          <span class="nav-name">CTF</span>
+        </a>
+        <div class="nav-menu">
+          <div class="menu-icon">
+            <i class="bi bi-list"></i>
+          </div>
+          <ul class="menu">
+            <li>
+              <form action="#" method="GET" class="navbar-search">
+                <label for="navbar-search" class="search-wrapper">
+                  <i class="bi bi-search"></i>
+                  <input
+                    id="navbar-search"
+                    type="search"
+                    placeholder="Nhập từ khoá"
+                    autocomplete="off"
+                  />
+                </label>
+              </form>
+            </li>
+            <li>
+              <a href="foods.html">Món ăn</a>
+            </li>
+            <li>
+              <a href="drinks.html">Thức uống</a>
+            </li>
+            <li>
+              <a href="locate.html">Địa điểm</a>
+            </li>
+            <li>
+              <a href="./feedback.html">Phản hổi</a>
+            </li>
+            <li>
+              <a href="favorite.html">
+                <i class="bi bi-heart-fill emote-off"></i>
+                <span>Yêu thích</span>
+              </a>
+            </li>
+            <li>
+              <a href="auth.html">
+                <i class="bi bi-person-circle"></i>
+                <span>Tài khoản</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </head>
+    <main>
+      <h1>Món Ngon Cần Thơ</h1>
+
+      <!-- Món Mặn -->
+      <h2>Món Mặn</h2>
+      <div class="product-foods-list">
+        <section class="product-foods">
+          <img
+            src="../img/foods-page/banh-canh-cua-2.jpg"
+            alt="Bánh Canh Cua"
+          />
+          <h6 class="content-title">Bánh Canh Cua</h6>
+          <button
+            onclick="showProductDetails(
+            'Bánh Canh Cua', 
+            '30.000đ – 50.000đ', 
+            'Bánh canh cua là món súp đậm đà với sợi bánh dẻo, thịt cua tươi ngọt và nước dùng thơm béo.',
+            'Bánh Canh Việt, 342 Nguyễn Văn Cừ, P. An Hòa; Bánh Canh Ghẹ Cà Mau, 140 Cách Mạng Tháng 8, P. An Hòa, Ninh Kiều', 
+            'https://shopeefood.vn/',  
+            '../img/foods-page/banh-canh-cua-2.jpg'
+          )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img src="../img/foods-page/banh-xeo-3.jpg" alt="Bánh Xèo" />
+          <h6 class="content-title">Bánh Xèo</h6>
+          <button
+            onclick="showProductDetails(
+            'Bánh Xèo', 
+            '25.000đ – 40.000đ', 
+            'Bánh xèo là loại bánh chiên giòn, bên trong có nhân thịt heo, tôm, đậu xanh và giá.',
+            'Bánh Xèo Mười Xiềm, đường Nguyễn Chí Thanh, Bình Thủy', 
+            'https://shopeefood.vn/',  
+            '../img/foods-page/banh-xeo-3.jpg'
+          )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img src="../img/foods-page/pho-1.jpg" alt="Phở" />
+          <h6 class="content-title">Phở</h6>
+          <button
+            onclick="showProductDetails(
+            'Phở', 
+            '30.000đ – 50.000đ', 
+            'Phở là món ăn truyền thống với nước dùng ngọt thanh, bánh phở mềm và thịt bò thái mỏng.',
+            'Quán Phở 24, Quận Ninh Kiều; Phở Cao, đường Trần Văn Khéo', 
+            'https://shopeefood.vn/',  
+            '../img/foods-page/pho-1.jpg'
+          )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img src="../img/foods-page/com-tam-1.jpg" alt="Cơm Tấm" />
+          <h6 class="content-title">Cơm Tấm</h6>
+          <button
+            onclick="showProductDetails(
+            'Cơm Tấm', 
+            '25.000đ – 40.000đ​', 
+            'Món cơm tấm phục vụ cùng sườn nướng, bì, chả và mỡ hành tạo nên hương vị đậm đà.',
+            'Cơm Tấm 5 Cây Trâm, đường Nguyễn Văn Cừ, Ninh Kiều​', 
+            'https://shopeefood.vn/',  
+            '../img/foods-page/com-tam-1.jpg'
+          )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img src="../img/foods-page/banh-uot-1.jpg" alt="Bánh Ướt" />
+          <h6 class="content-title">Bánh Ướt</h6>
+          <button
+            onclick="showProductDetails(
+            'Bánh Ướt', 
+            '20.000đ – 40.000đ', 
+            'Bánh ướt mềm, mỏng, ăn kèm chả lụa, thịt nướng, tôm, rau thơm và nước mắm chua ngọt.',
+            '35 Đồng Khởi, quận Ninh Kiều, Cần Thơ.​', 
+            'https://shopeefood.vn/',  
+            '../img/foods-page/banh-uot-1.jpg'
+          )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img src="../img/foods-page/my-cay-1.jpg" alt="Mì Cay" />
+          <h6 class="content-title">Mì Cay</h6>
+          <button
+            onclick="showProductDetails(
+            'Mì Cay', 
+            '25.000đ – 50.000đ', 
+            'Mì cay Hàn Quốc có nước dùng cay nồng, sợi mì dai, kèm theo rau và thịt.',
+            'Các quán mì cay như Mì Cay Sasin, đường Nguyễn Văn Cừ.​', 
+            'https://shopeefood.vn/',  
+            '../img/foods-page/my-cay-1.jpg'
+          )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img src="../img/foods-page/lau-mam.jpg" alt="Lẩu Mắm" />
+          <h6 class="content-title">Lẩu Mắm</h6>
+          <button
+            onclick="showProductDetails(
+            'Lẩu Mắm', 
+            '50.000đ – 100.000đ', 
+            'Lẩu mắm với nước dùng từ mắm cá linh, mắm cá sặc, nấu cùng rau và hải sản tươi.',
+            'Lẩu mắm Dạ Lý, đường 3 Tháng 2, Ninh Kiều​​', 
+            'https://shopeefood.vn/',  
+            '../img/foods-page/lau-mam.jpg'
+          )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img src="../img/foods-page/vit-nau-chao.jpg" alt="Vịt Nấu Chao" />
+          <h6 class="content-title">Vịt Nấu Chao</h6>
+          <button
+            onclick="showProductDetails(
+            'Vịt Nấu Chao', 
+            '80.000đ – 150.000đ', 
+            'Vịt nấu chao là món đậm đà với thịt vịt mềm và nước chao thơm lừng.',
+            'Quán Ngọc Lâm, đường Lê Lợi, Ninh Kiều​​', 
+            'https://shopeefood.vn/',  
+            '../img/foods-page/vit-nau-chao.jpg'
+          )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+      </div>
+      <!-- Món Ăn Vặt -->
+      <h2>Món Ăn Vặt</h2>
+      <div class="product-foods-list">
+        <section class="product-foods">
+          <img
+            src="../img/foods-page/chuoi-nep-nuong.jpg"
+            alt="Chuối nếp nướng"
+          />
+          <h6 class="content-title">Chuối nếp nướng</h6>
+          <button
+            onclick="showProductDetails(
+          'Chuối nếp nướng', 
+          '10.000đ – 20.000đ', 
+          'Chuối bọc nếp được nướng trên lửa, mang đến vị ngọt của chuối và thơm của nếp.',
+          'Các quầy bán hàng rong quanh chợ Cần Thơ.​', 
+          'https://shopeefood.vn/',  
+          '../img/foods-page/chuoi-nep-nuong.jpg'
+        )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img
+            src="../img/foods-page/banh-bo-trien-chieu.jpg"
+            alt="Bánh Bò Triển Chiêu"
+          />
+          <h6 class="content-title">Bánh Bò Triển Chiêu</h6>
+          <button
+            onclick="showProductDetails(
+          'Bánh Bò Triển Chiêu', 
+          '10.000đ – 20.000đ', 
+          'Bánh bò mềm, có vị ngọt nhẹ và hương lá dứa đặc trưng.',
+          'Quầy bán hàng rong đối diện Vincom Xuân Khánh.​', 
+          'https://shopeefood.vn/',  
+          '../img/foods-page/banh-bo-trien-chieu.jpg'
+        )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img src="../img/foods-page/banh-cong.jpg" alt="Bánh Cống" />
+          <h6 class="content-title">Bánh Cống</h6>
+          <button
+            onclick="showProductDetails(
+          'Bánh Cống', 
+          '15.000đ – 25.000đ', 
+          'Bánh cống là bánh chiên giòn với lớp vỏ vàng rụm và nhân đậu xanh, thịt.',
+          'Bánh Cống Cô Út, Trần Phú, Ninh Kiều.​', 
+          'https://shopeefood.vn/',  
+          '../img/foods-page/banh-cong.jpg'
+        )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img
+            src="../img/foods-page/banh-tet-la-cam.jpg"
+            alt="Bánh Tét Lá Cẩm"
+          />
+          <h6 class="content-title">Bánh Tét Lá Cẩm</h6>
+          <button
+            onclick="showProductDetails(
+          'Bánh Tét Lá Cẩm', 
+          '10.000đ – 20.000đ', 
+          'Bánh tét lá cẩm là loại bánh tét đặc biệt với màu tím tự nhiên từ lá cẩm.',
+          'Cửa hàng bánh tét truyền thống quanh chợ đêm Cần Thơ.​', 
+          'https://shopeefood.vn/',  
+          '../img/foods-page/banh-tet-la-cam.jpg'
+        )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img
+            src="../img/foods-page/com-chay-kho-quet.jpg"
+            alt="Cơm Cháy Kho Quẹt"
+          />
+          <h6 class="content-title">Cơm Cháy Kho Quẹt</h6>
+          <button
+            onclick="showProductDetails(
+          'Cơm Cháy Kho Quẹt', 
+          '20.000đ – 40.000đ', 
+          'Cơm cháy giòn tan, ăn kèm kho quẹt thơm ngon, đậm đà.',
+          'Các quán ăn đặc sản trong khu phố cổ Cần Thơ.​', 
+          'https://shopeefood.vn/',  
+          '../img/foods-page/com-chay-kho-quet.jpg'
+        )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img
+            src="../img/foods-page/oc-nuong-tieu-xanh.jpg"
+            alt="Ốc Nướng Tiêu Xanh"
+          />
+          <h6 class="content-title">Ốc Nướng Tiêu Xanh</h6>
+          <button
+            onclick="showProductDetails(
+          'Ốc Nướng Tiêu Xanh', 
+          '30.000đ – 60.000đ', 
+          'Ốc nướng tiêu có hương thơm của tiêu xanh, vị ngọt tự nhiên của ốc.',
+          'Quán ốc Thảo, đường Huỳnh Cương, Ninh Kiều.​', 
+          'https://shopeefood.vn/',  
+          '../img/foods-page/oc-nuong-tieu-xanh.jpg'
+        )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img
+            src="../img/foods-page/banh-trang-tron.jpg"
+            alt="Bánh Tráng Trộn"
+          />
+          <h6 class="content-title">Bánh Tráng Trộn</h6>
+          <button
+            onclick="showProductDetails(
+          'Bánh Tráng Trộn', 
+          '15.000đ – 20.000đ', 
+          'Bánh tráng trộn là món ăn vặt đặc trưng với vị chua, cay, ngọt của nước sốt.',
+          'Các quầy xe bánh tráng quanh khu chợ đêm.​', 
+          'https://shopeefood.vn/',  
+          '../img/foods-page/banh-trang-tron.jpg'
+        )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img src="../img/foods-page/xoai-lac.jpg" alt="Trái Cây Lắc" />
+          <h6 class="content-title">Trái Cây Lắc</h6>
+          <button
+            onclick="showProductDetails(
+          'Trái Cây Lắc', 
+          '10.000đ – 20.000đ', 
+          'Xoài và cóc lắc với muối tôm cay và chua ngọt rất hấp dẫn.',
+          'Các quầy bán hàng rong quanh chợ Cần Thơ.​', 
+          'https://shopeefood.vn/',  
+          '../img/foods-page/xoai-lac.jpg'
+        )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+      </div>
+      <!-- Món Chay -->
+      <h2>Món chay</h2>
+      <div class="product-foods-list">
+        <section class="product-foods">
+          <img
+            src="../img/foods-page/dau-hu-xao.jpg"
+            alt="Đậu Hũ Xào Nấm Chay"
+          />
+          <h6 class="content-title">Đậu Hũ Xào Nấm Chay</h6>
+          <button
+            onclick="showProductDetails(
+          'Đậu Hũ Xào Nấm Chay', 
+          '20.000đ – 40.000đ', 
+          'Món xào chay đơn giản, thanh đạm với đậu hũ và các loại nấm.',
+          'Quán chay Thanh Lương, đường Mậu Thân, Ninh Kiều.​', 
+          'https://shopeefood.vn/',  
+          '../img/foods-page/dau-hu-xao.jpg'
+        )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img src="../img/foods-page/bun-tron-chay.jpg" alt="Bún Trộn Chay" />
+          <h6 class="content-title">Bún Trộn Chay</h6>
+          <button
+            onclick="showProductDetails(
+          'Bún Trộn Chay', 
+          '25.000đ – 40.000đ', 
+          'Bún trộn chay với rau sống, đậu hũ và nước mắm chay đậm đà.',
+          'Quán Liên Hoa Chay, đường Hòa Bình, Ninh Kiều.​', 
+          'https://shopeefood.vn/',  
+          '../img/foods-page/bun-tron-chay.jpg'
+        )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img src="../img/foods-page/nem-chay.jpg" alt="Nem Chay" />
+          <h6 class="content-title">Nem Chay</h6>
+          <button
+            onclick="showProductDetails(
+          'Nem Chay', 
+          '15.000đ – 30.000đ​', 
+          'Nem chay được cuốn từ rau củ, bún, ăn kèm với nước mắm chay.',
+          'Các quán ăn chay ở khu chợ Cần Thơ.​', 
+          'https://shopeefood.vn/',  
+          '../img/foods-page/nem-chay.jpg'
+        )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+        <section class="product-foods">
+          <img src="../img/foods-page/cha-que-chay.jpg" alt="Chả Quế Chay" />
+          <h6 class="content-title">Chả Quế Chay</h6>
+          <button
+            onclick="showProductDetails(
+          'Chả Quế Chay', 
+          '15.000đ – 20.000đ​', 
+          'Trả quế chay có hương vị đặc trưng từ hương liệu chay, ăn rất lạ miệng.',
+          'Các quán ăn chay ở khu chợ Cần Thơ.​', 
+          'https://shopeefood.vn/',  
+          '../img/foods-page/cha-que-chay.jpg'
+        )"
+          >
+            Xem chi tiết
+          </button>
+          <span class="emote-wrapper">
+            <i class="bi bi-heart emote-off"></i>
+            <i class="bi bi-heart-fill emote-on d-none"></i>
+          </span>
+        </section>
+      </div>
+      <!-- Modal Chi Tiết Sản Phẩm -->
+      <div id="productDetails" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeProductDetails()">&times;</span>
+          <img
+            id="modalImage"
+            src=""
+            alt="Hình ảnh món ăn"
+            style="width: 100%; border-radius: 8px; margin-bottom: 15px"
+          />
+          <h2 id="modalTitle"></h2>
+          <p id="modalPrice"></p>
+          <p id="modalDescription"></p>
+          <p><strong>Địa chỉ:</strong> <span id="modalAddress"></span></p>
+          <label for="notes">Ghi chú:</label>
+          <textarea
+            id="notes"
+            placeholder="Nhập thông tin cần lưu ý..."
+          ></textarea>
+          <button id="buyNow" class="order-now">Mua ngay tại ShopeeFood</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <h3 class="footer-title">Group 3</h3>
+          <p class="footer-des">
+            Leader: Võ Minh Hiếu B2303811 <br />
+            Member: Lý Đặng Thành Đạt - <br />
+            Member: Nguyễn Công Chức - B2303800 <br />
+            Collage: CTU - Can Tho University <br />
+            Subject: Nhập môn lập trình Web - CT188
+          </p>
+        </div>
+        <div class="footer-wrapper">
+          <h3 class="footer-title">Kết nối</h3>
+          <ul class="footer-list">
+            <li>
+              <a href="">Facebook</a>
+            </li>
+            <li>
+              <a href="">Tiktok</a>
+            </li>
+            <li>
+              <a href="">Github</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-wrapper">
+          <h3 class="footer-title">Công nghệ</h3>
+          <ul class="footer-list">
+            <li>
+              <a href="">Boostrap</a>
+            </li>
+            <li>
+              <a href="">Jquery</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-wrapper">
+          <h3 class="footer-title">Slogan</h3>
+          <p class="footer-des">
+            1. Yêu tổ quốc yêu đồng bào. <br />
+            2. Học tập tốt, lao động tốt. <br />
+            3. Đoàn kết tốt, kỉ luật tốt. <br />
+            4. Giữ gìn vệ sinh thật tốt. <br />
+            5. Khiêm tốn, thật thà, dũng cảm. <br />
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- *javascripts -->
+    <!-- boostrap -->
+    <script src="../../vender/boostrap-5/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/foods.js"></script>
+  </body>
+</html>

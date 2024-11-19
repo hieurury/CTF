@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">  
+    <link rel="shortcut icon" href="../img/logo-1.jpg" type="image/x-icon">  
+    <title>Tài khoản</title>
+</head>
+<body>
+    <head>
+        <nav class="navbar">
+            <a href="../index.html" class="nav-logo">
+                <img src="../img/logo-1.jpg" alt="">
+                <span class="nav-name">CTF</span>
+            </a>
+            <div class="nav-menu">
+                <div class="menu-icon">
+                    <i class="bi bi-list"></i>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <form action="#" method="GET" class="navbar-search">
+                            <label for="navbar-search" class="search-wrapper">
+                                <i class="bi bi-search"></i>
+                                <input id="navbar-search" type="search" placeholder="Nhập từ khoá" autocomplete="off">
+                            </label>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="foods.html">Món ăn</a>
+                    </li>
+                    <li>
+                        <a href="drinks.html">Thức uống</a>
+                    </li>
+                    <li>
+                        <a href="locate.html">Địa điểm</a>
+                    </li>
+                    <li>
+                        <a href="./feedback.html">Phản hổi</a>
+                    </li>
+                    <li>
+                        
+                        <a href="favorite.html">
+                            <i class="bi bi-heart-fill emote-off"></i>
+                            <span>Yêu thích</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="auth.html">
+                            <i class="bi bi-person-circle"></i>
+                            <span>Tài khoản</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+    <main>
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <div class="auth-container auth-login d-flex align-items-center ">
+                <div class="auth-left d-none d-lg-flex d-sm-none">
+                    <div class="wrapper-thumnail">
+                        <img src="../img/auth-page/login-logo.webp" alt="">
+                    </div>
+                    <h3 class="thumnail-title">login</h3>
+                </div>
+                <div class="auth-right">
+                    <h1 class="form-title">Đăng nhập</h1>
+                    <form name="auth-login" action="">
+                        <div class="form-auth-group">
+                            <div class="input-wrapper">
+                                <input rules="required|email" type="text" name="email" id="login-email" class="form-input">
+                                <label class="input-des" for="login-email">Email:</label>
+                            </div>
+                            <p class="group-message"></p>
+                        </div>
+                        <div class="form-auth-group">
+                            <div class="input-wrapper">
+                                <input rules="required|min:6" type="text" name="text" id="login-password" class="form-input">
+                                <label class="input-des" for="login-password">Password:</label>
+                            </div>
+                            <p class="group-message"></p>
+                        </div>
+                        <button class="form-btn login-btn" type="submit">Đăng nhập</button>
+                        <div class="wrapper-options">
+                            <div class="socials">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-google"></i>
+                            </div>
+                            <span class="register-redirect">Đăng kí</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- *trang đăng kí -->
+            <div class="auth-container auth-register d-flex align-items-center d-none">
+                <div class="auth-left d-none d-lg-flex d-sm-none">
+                    <div class="wrapper-thumnail">
+                        <img src="../img/auth-page/register-logo.webp" alt="">
+                    </div>
+                    <h3 class="thumnail-title">Register</h3>
+                </div>
+                <div class="auth-right">
+                    <h1 class="form-title">Đăng kí</h1>
+                    <form name="auth-register" action="">
+                        <div class="form-auth-group">
+                            <div class="input-wrapper">
+                                <input rules="required|email" type="text" name="email" id="register-email" class="form-input">
+                                <label class="input-des" for="register-email">Email:</label>
+                            </div>
+                            <p class="group-message"></p>
+                        </div>
+                        <div class="form-auth-group">
+                            <div class="input-wrapper">
+                                <input rules="required|min:6" type="text" name="text" id="register-password" class="form-input">
+                                <label class="input-des" for="register-password">Password:</label>
+                            </div>
+                            <p class="group-message"></p>
+                        </div>
+                        <div class="form-auth-group">
+                            <div class="input-wrapper">
+                                <input rules="required" type="text" name="text" id="register-re-password" class="form-input">
+                                <label class="input-des" for="register-re-password">Re-password:</label>
+                            </div>
+                            <p class="group-message"></p>
+                        </div>
+                        <button class="form-btn register-btn" type="submit">Đăng kí</button>
+                        <div class="wrapper-options">
+                            <div class="socials">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-google"></i>
+                            </div>
+                            <span class="login-redirect">Đăng nhập</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <h3 class="footer-title">Group 3</h3>
+                <p class="footer-des">
+                    Leader: Võ Minh Hiếu B2303811 <br>
+                    Member: Lý Đặng Thành Đạt -  <br>
+                    Member: Nguyễn Công Chức - B2303800 <br>
+                    Collage: CTU - Can Tho University <br>
+                    Subject: Nhập môn lập trình Web - CT188
+                </p>
+            </div>
+            <div class="footer-wrapper">
+                <h3 class="footer-title">Kết nối</h3>
+                <ul class="footer-list">
+                    <li>
+                        <a href="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="">Tiktok</a>
+                    </li>
+                    <li>
+                        <a href="">Github</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-wrapper">
+                <h3 class="footer-title">Công nghệ</h3>
+                <ul class="footer-list">
+                    <li>
+                        <a href="">Boostrap</a>
+                    </li>
+                    <li>
+                        <a href="">Jquery</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-wrapper">
+                <h3 class="footer-title">Slogan</h3>
+                <p class="footer-des">
+                    1. Yêu tổ quốc yêu đồng bào. <br>
+                    2. Học tập tốt, lao động tốt. <br>
+                    3. Đoàn kết tốt, kỉ luật tốt. <br>
+                    4. Giữ gìn vệ sinh thật tốt. <br>
+                    5. Khiêm tốn, thật thà, dũng cảm. <br>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- *javascripts -->
+    <!-- boostrap -->
+    <script src="../../vender/boostrap-5/js/bootstrap.bundle.min.js"></script> 
+    <!-- main.js -->
+     <script src="../js/main.js"></script>
+     <script src="../js/auth.js"></script>
+</body>
+</html>

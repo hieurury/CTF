@@ -1,0 +1,9 @@
+/* *nạp font chữ cabin */
+@font-face {
+    font-family: "cabin";
+    src: url(../../vender/fonts/Cabin/Cabin-VariableFont_wdth\,wght.ttf) format("truetype"),
+        url(../../vender/fonts/Cabin/Cabin-Italic-VariableFont_wdth\,wght.ttf) format("truetype"),
+        url(../../vender/fonts/Cabin/static/Cabin-Bold.ttf) format("truetype"),
+        url(../../vender/fonts/Cabin/static/Cabin-BoldItalic.ttf) format("truetype"),
+        /* nạp thêm các font khác từ thư mục static như trên cho đủ */
+}

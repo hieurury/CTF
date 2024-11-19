@@ -1,0 +1,75 @@
+
+
+/* Phần danh sách yêu thích */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Các sản phẩm xếp từ bên trái */
+    gap: 40px;                  /* Khoảng cách giữa các sản phẩm */
+    padding: 25px;
+    align-items: flex-start;    /* Các sản phẩm sẽ căn lên phía trên */
+}
+
+/* Phần tử sản phẩm */
+.product-item {
+    width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+}
+
+/* Ảnh sản phẩm */
+.product-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Tên sản phẩm */
+.product-item .product-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;
+}
+
+/* Thời gian yêu thích */
+.product-item .product-time {
+    font-size: 10px;
+    color: #888;
+    margin-top: 4px;
+}
+
+/* Nút bỏ thích */
+.product-item .remove-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    transition: background-color 0.3s;
+    width: 100%; /* Nút sẽ chiếm toàn bộ chiều rộng của phần tử */
+}
+
+/* Icon trong nút bỏ thích */
+.product-item .remove-btn i {
+    font-size: 16px;
+}
+
+/* Hiệu ứng khi hover vào nút bỏ thích */
+.product-item .remove-btn:hover {
+    background-color: #ff0000;
+}

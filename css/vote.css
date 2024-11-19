@@ -1,0 +1,117 @@
+
+
+/* Phần bảng xếp hạng sản phẩm */
+section.ranking {
+    margin: 20px 0;
+}
+.vote-title {
+    margin-top: 20px;
+}
+.product-list-voted {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Danh sách sản phẩm */
+.product-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Đặt các sản phẩm theo chiều dọc */
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 6px;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.3s ease; /* Thêm hiệu ứng mượt mà */
+}
+
+.product-item:hover {
+    background-color: #f7f7f7;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-name {
+    flex-grow: 1; /* Tên sản phẩm chiếm hết không gian còn lại */
+    font-size: 1.2em;
+    text-align: left;
+    color: #000000;
+}
+
+.vote-count {
+    text-align: right;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Khi sản phẩm đã được bỏ phiếu */
+.updated {
+    background-color: #d4f9d4; /* Màu nền xanh nhẹ */
+    border-left: 4px solid #4CAF50; /* Tạo viền xanh bên trái */
+}
+
+.selected {
+    background-color: #4CAF50;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Phần chọn sản phẩm để bỏ phiếu */
+section.vote {
+    margin: 20px 0;
+    margin-left: 33px;
+}
+
+select {
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    transition: border-color 0.3s ease; /* Hiệu ứng khi hover */
+}
+
+select:hover {
+    border-color: #4CAF50;
+    background-color: #f9f9f9; /* Tạo nền sáng hơn khi hover */
+}
+
+/* Tạo khoảng cách giữa các phần */
+.vote {
+    margin-bottom: 20px;
+}
+
+.vote:nth-child(odd) {
+    margin-bottom: 40px; /* Tăng khoảng cách cho phần bình chọn món ăn */
+}
+
+/* Tạo khoảng cách giữa các nhóm bảng xếp hạng */
+.ranking {
+    margin-bottom: 40px; /* Tạo khoảng cách giữa bảng xếp hạng món ăn và thức uống */
+}
+
+/* Thêm kiểu dáng cho các phần chọn món */
+select {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+/* Thêm hiệu ứng cho sản phẩm khi bỏ phiếu */
+.product-item.voted {
+    background-color: #e0ffe0;  /* Màu xanh nhạt khi đã bỏ phiếu */
+    border-color: #4CAF50;       /* Đổi màu viền thành màu xanh */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+}
+

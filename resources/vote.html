@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">  
+    <link rel="shortcut icon" href="../img/logo-1.jpg" type="image/x-icon">  
+    <title>Tài khoản</title>
+</head>
+<body>
+    <head>
+        <nav class="navbar">
+            <a href="../index.html" class="nav-logo">
+                <img src="../img/logo-1.jpg" alt="">
+                <span class="nav-name">CTF</span>
+            </a>
+            <div class="nav-menu">
+                <div class="menu-icon">
+                    <i class="bi bi-list"></i>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <form action="#" method="GET" class="navbar-search">
+                            <label for="navbar-search" class="search-wrapper">
+                                <i class="bi bi-search"></i>
+                                <input id="navbar-search" type="search" placeholder="Nhập từ khoá" autocomplete="off">
+                            </label>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="">Món ăn</a>
+                    </li>
+                    <li>
+                        <a href="">Thức uống</a>
+                    </li>
+                    <li>
+                        <a href="">Địa điểm</a>
+                    </li>
+                    <li>
+                        <a href="">Phản hồi</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="bi bi-person-circle"></i>
+                            <span>Tài khoản</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+    <main>
+        <div class="container p-0">
+            <div class="row position-relative m-0 p-0">
+                <div class="col-lg-12 col-sm-12 p-0 m-0">
+                            <!-- Bảng Xếp Hạng Món Ăn -->
+                                <h1 class="vote-title">BẢNG XẾP HẠNG MÓN ĂN YÊU THÍCH</h1>
+                            <section class="ranking">
+                                <h2>🏆 Bảng Xếp Hạng Món Ăn</h2>
+                                <ul id="product-list-food" class="product-list-voted">
+                                    <!-- Các sản phẩm món ăn sẽ được hiển thị tại đây -->
+                                </ul>
+                            </section>
+                        
+                            <!-- Bình Chọn Món Ăn -->
+                            <section class="vote">
+                                <h3>Bình Chọn Món Ăn Yêu Thích</h3>
+                                <p>Chọn một món ăn để bỏ phiếu:</p>
+                                <select id="product-selector-food">
+                                    <option value="">Chọn món ăn</option>
+                                    <!-- Các món ăn sẽ được thêm vào đây thông qua JavaScript -->
+                                </select>
+                                <button id="vote-button-food">Bỏ Phiếu</button>
+                            </section>
+                            <!-- Bảng Xếp Hạng Thức Uống -->
+                                <h1 class="vote-title">BẢNG XẾP HẠNG THỨC UỐNG YÊU THÍCH</h1>
+                            <section class="ranking">
+                                <h2>🏆 Bảng Xếp Hạng Thức Uống</h2>
+                                <ul id="product-list-drink"  class="product-list-voted">
+                                    <!-- Các sản phẩm thức uống sẽ được hiển thị tại đây -->
+                                </ul>
+                            </section>
+                            <!-- Bình Chọn Thức Uống -->
+                            <section class="vote">
+                                <h3>Bình Chọn Thức Uống Yêu Thích</h3>
+                                <p>Chọn một thức uống để bỏ phiếu:</p>
+                                <select id="product-selector-drink">
+                                    <option value="">Chọn thức uống</option>
+                                    <!-- Các thức uống sẽ được thêm vào đây thông qua JavaScript -->
+                                </select>
+                                <button id="vote-button-drink">Bỏ Phiếu</button>
+                            </section>
+                        <div class="container">
+                            <p>&copy; 2024 Bảng Xếp Hạng Món Ăn và Thức Uống</p>
+                        </div> 
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <h3 class="footer-title">Group 3</h3>
+                <p class="footer-des">
+                    Leader: Võ Minh Hiếu B2303811 <br>
+                    Member: Lý Đặng Thành Đạt -  <br>
+                    Member: Nguyễn Công Chức - B2303800 <br>
+                    Collage: CTU - Can Tho University <br>
+                    Subject: Nhập môn lập trình Web - CT188
+                </p>
+            </div>
+            <div class="footer-wrapper">
+                <h3 class="footer-title">Kết nối</h3>
+                <ul class="footer-list">
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Tiktok</a></li>
+                    <li><a href="">Github</a></li>
+                </ul>
+            </div>
+            <div class="footer-wrapper">
+                <h3 class="footer-title">Công nghệ</h3>
+                <ul class="footer-list">
+                    <li><a href="">Boostrap</a></li>
+                    <li><a href="">Jquery</a></li>
+                </ul>
+            </div>
+            <div class="footer-wrapper">
+                <h3 class="footer-title">Slogan</h3>
+                <p class="footer-des">
+                    1. Yêu tổ quốc yêu đồng bào. <br>
+                    2. Học tập tốt, lao động tốt. <br>
+                    3. Đoàn kết tốt, kỉ luật tốt. <br>
+                    4. Giữ gìn vệ sinh thật tốt. <br>
+                    5. Khiêm tốn, thật thà, dũng cảm. <br>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    
+        <!-- Chèn Script cho Bình Chọn -->
+         <script src="../js/main.js"></script>
+        <script src="../js/vote.js"></script> 
+</body>
+</html>
+    

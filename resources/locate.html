@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="shortcut icon" href="../img/logo-1.jpg" type="image/x-icon" />
+    <title>Địa điểm</title>
+  </head>
+  <body>
+    <head>
+      <nav class="navbar">
+        <a href="../index.html" class="nav-logo">
+          <img src="../img/logo-1.jpg" alt="" />
+          <span class="nav-name">CTF</span>
+        </a>
+        <div class="nav-menu">
+          <div class="menu-icon">
+            <i class="bi bi-list"></i>
+          </div>
+          <ul class="menu">
+            <li>
+              <form action="#" method="GET" class="navbar-search">
+                <label for="navbar-search" class="search-wrapper">
+                  <i class="bi bi-search"></i>
+                  <input
+                    id="navbar-search"
+                    type="search"
+                    placeholder="Nhập từ khoá"
+                    autocomplete="off"
+                  />
+                </label>
+              </form>
+            </li>
+            <li>
+              <a href="foods.html">Món ăn</a>
+            </li>
+            <li>
+              <a href="drinks.html">Thức uống</a>
+            </li>
+            <li>
+              <a href="locate.html">Địa điểm</a>
+            </li>
+            <li>
+              <a href="feedback.html">Phản hổi</a>
+            </li>
+            <li>
+              <a href="auth.html">
+                <i class="bi bi-person-circle"></i>
+                <span>Tài khoản</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </head>
+    <main class="loca-main">
+      <section id="intro">
+        <h2 class="intro-title">
+          Cần Thơ - Thiên đường Ẩm Thực Miền Tây: Ăn Là Phải Đã, Chơi Là Phải
+          Vui!
+        </h2>
+        <p class="loca-description">
+          Cần Thơ, thủ phủ của miền Tây sông nước, không chỉ được biết đến với
+          những vườn trái cây trĩu quả và sông nước hiền hòa, mà còn là thiên
+          đường ẩm thực đặc sắc, phong phú. Du khách khi đến đây sẽ có cơ hội
+          thưởng thức những món ăn đậm chất miền Tây, mang đậm hương vị truyền
+          thống, và đặc biệt là trải nghiệm không gian ẩm thực đường phố sôi
+          động. Hãy cùng khám phá những điểm dừng chân ẩm thực không thể bỏ lỡ
+          khi ghé thăm Cần Thơ.
+        </p>
+      </section>
+      <section class="instruction-mucluc-container">
+        <button class="mucluc-container-toggle" onclick="toggleMenu()">
+          Mục Lục
+        </button>
+        <ul class="mucluc-container-list">
+          <li>
+            <a href="#market1"
+              >1. Chợ Nổi Cái Răng – Khám Phá Bữa Sáng Đậm Chất Miền Tây</a
+            >
+          </li>
+          <li>
+            <a href="#night-market">2. Chợ Đêm Cần Thơ – Thiên Đường Ăn Vặt</a>
+          </li>
+          <li>
+            <a href="#food-street">3. Phố Ẩm Thực – Tinh Hoa Ẩm Thực Cần Thơ</a>
+          </li>
+          <li>
+            <a href="#market2">4. Chợ Nổi Phong Điền – Món Ngon Trên Sông</a>
+          </li>
+          <li>
+            <a href="#events">5. Sự Kiện Ẩm Thực Đặc Sắc Hàng Năm</a>
+          </li>
+          <li>
+            <a href="#cafes"
+              >6. Những Quán Café và Trà Sữa Phong Cách Độc Đáo</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="market1">
+        <h3 class="loca-title">
+          1. Chợ Nổi Cái Răng – Khám Phá Bữa Sáng Đậm Chất Miền Tây
+        </h3>
+        <section class="loca-content">
+          <img
+            src="../img/location-page/cho-noi-cai-rang.jpg"
+            alt="Chợ nổi Cái Răng"
+          />
+          <p class="loca-description">
+            Chợ nổi Cái Răng là một trong những điểm đến không thể bỏ qua khi
+            đến Cần Thơ. Nằm trên sông Hậu, chợ nổi này là nơi buôn bán và trao
+            đổi hàng hóa chủ yếu là các loại nông sản, thủy sản và thực phẩm chế
+            biến sẵn. Đặc biệt, nơi đây nổi tiếng với các món ăn sáng truyền
+            thống mà du khách có thể thưởng thức ngay trên thuyền, như hủ tiếu,
+            bún riêu, bánh xèo... Mỗi món ăn không chỉ là sự kết hợp tuyệt vời
+            giữa hương vị đặc trưng mà còn thể hiện sự khéo léo của người dân
+            miền Tây. Khi ngồi trên thuyền, bạn sẽ được trải nghiệm cảm giác vừa
+            ăn vừa ngắm nhìn không gian sông nước bình yên, tạo nên một buổi
+            sáng đầy thú vị.
+          </p>
+        </section>
+      </section>
+
+      <section id="night-market">
+        <h3 class="loca-title">2. Chợ Đêm Cần Thơ – Thiên Đường Ăn Vặt</h3>
+        <section class="loca-content">
+          <img
+            src="../img/location-page/cho-dem-can-tho.jpg"
+            alt="Chợ đêm Cần Thơ"
+          />
+          <p class="loca-description">
+            Chợ đêm Cần Thơ, với không khí náo nhiệt và đầy sắc màu, là một điểm
+            đến tuyệt vời cho những tín đồ của ẩm thực đường phố. Khi đêm xuống,
+            chợ đêm trở thành nơi tụ họp của hàng trăm gian hàng ăn vặt với các
+            món như bánh tráng nướng, bánh khọt, cá viên chiên, gỏi cuốn và đặc
+            biệt là kem trái cây cực kỳ mát lạnh. Cùng với không gian nhộn nhịp
+            của chợ, bạn sẽ cảm nhận được sự thân thiện và ấm áp của người dân
+            nơi đây. Đây là nơi lý tưởng để bạn vừa thưởng thức món ăn vừa hòa
+            mình vào không khí vui tươi của Cần Thơ vào ban đêm.
+          </p>
+        </section>
+      </section>
+
+      <section id="food-street">
+        <h3 class="loca-title">3. Phố Ẩm Thực – Tinh Hoa Ẩm Thực Cần Thơ</h3>
+        <section class="loca-content">
+          <img src="../img/location-page/pho-am-thuc.jpg" alt="Phố Ẩm Thực" />
+          <p class="loca-description">
+            Cần Thơ có rất nhiều con phố ẩm thực nổi tiếng, nơi bạn có thể dễ
+            dàng thưởng thức các món đặc sản miền Tây. Một trong những con phố
+            nổi bật là phố ẩm thực Trần Phú, tập trung nhiều quán ăn từ bình dân
+            đến cao cấp. Bạn sẽ bị cuốn hút bởi các món ăn như lẩu mắm, cá lóc
+            nướng trui, bò lá lốt, và đặc biệt là ốc len xào dừa thơm ngon.
+            Không gian của phố ẩm thực cũng rất đa dạng, từ những quán ăn ngoài
+            trời cho đến nhà hàng có không gian sang trọng, phù hợp cho mọi nhu
+            cầu thưởng thức của du khách.
+          </p>
+        </section>
+      </section>
+
+      <section id="market2">
+        <h3 class="loca-title">4. Chợ Nổi Phong Điền – Món Ngon Trên Sông</h3>
+        <section class="loca-content">
+          <img
+            src="../img/location-page/cho-noi-phong-dien.jpg"
+            alt="Chợ nổi Phong Điền"
+          />
+          <p class="loca-description">
+            Ngoài chợ nổi Cái Răng, Cần Thơ còn có nhiều chợ nổi khác như chợ
+            nổi Phong Điền, chợ nổi Trà Ôn, mỗi chợ lại mang đến những món ăn
+            độc đáo của riêng mình. Chợ nổi Phong Điền, nổi bật với các món như
+            bánh tầm bì, gỏi cuốn, và hải sản tươi sống, luôn là điểm đến lý
+            tưởng cho những ai muốn tìm hiểu về ẩm thực miền sông nước. Những
+            món ăn này được chế biến ngay trên các thuyền, giúp du khách trải
+            nghiệm thực sự về đời sống của người dân miền Tây, vừa ăn vừa trò
+            chuyện với người dân địa phương.
+          </p>
+        </section>
+      </section>
+
+      <section id="events">
+        <h3 class="loca-title">5. Sự Kiện Ẩm Thực Đặc Sắc Hàng Năm</h3>
+        <section class="loca-content">
+          <img
+            src="../img/location-page/le-hoi-banh-dan-gian-nam-bo.jpg"
+            alt="Lễ Hội Bánh Dân Gian Nam Bộ"
+          />
+          <p class="loca-description">
+            Ngoài các chợ đêm và phố ẩm thực, Cần Thơ còn nổi tiếng với các sự
+            kiện ẩm thực hàng năm. Một trong những sự kiện đặc sắc phải kể đến
+            là Lễ hội Bánh Dân Gian Nam Bộ, tổ chức vào dịp cuối năm. Lễ hội
+            không chỉ là dịp để trưng bày các loại bánh truyền thống như bánh ít
+            lá gai, bánh tét lá cẩm, bánh bò thốt nốt mà còn là cơ hội để du
+            khách tìm hiểu thêm về quy trình làm bánh, tham gia các hoạt động
+            văn hóa, nghệ thuật. Đây là một trong những sự kiện ẩm thực không
+            thể bỏ lỡ khi đến Cần Thơ, nơi bạn có thể thưởng thức các món ăn dân
+            gian miền Tây đầy hấp dẫn.
+          </p>
+        </section>
+      </section>
+
+      <section id="cafes">
+        <h3 class="loca-title">
+          6. Những Quán Café và Trà Sữa Phong Cách Độc Đáo
+        </h3>
+        <section class="loca-content">
+          <img
+            src="../img/location-page/quan-ca-phe.jpg"
+            alt="Quán Café Cần Thơ"
+          />
+          <p class="loca-description">
+            Cần Thơ cũng là nơi có những quán cà phê và trà sữa mang phong cách
+            hiện đại và độc đáo. Từ các quán cà phê vintage đến những quán
+            rooftop nhìn ra sông Hậu, bạn có thể thưởng thức một ly cà phê sữa
+            đá thơm ngon hoặc một ly trà trái cây tươi mát giữa không gian
+            thoáng đãng. Không chỉ đơn thuần là những thức uống, đây còn là nơi
+            để bạn thư giãn, thưởng thức không khí sông nước, đồng thời tận
+            hưởng những khoảnh khắc yên bình và thư thái sau một ngày dài tham
+            quan.
+          </p>
+        </section>
+      </section>
+
+      <section id="tips">
+        <h3 class="loca-title">Lưu Ý Khi Thưởng Thức Ẩm Thực Tại Cần Thơ</h3>
+        <section class="loca-content">
+          <ul>
+            <li>
+              Mặc quần áo thoải mái: Di chuyển ở các chợ nổi hay phố ẩm thực có
+              thể đông đúc, việc mặc trang phục thoải mái sẽ giúp bạn dễ dàng
+              thưởng thức món ăn.
+            </li>
+            <li>
+              Mang theo tiền mặt: Một số quán ăn đường phố chỉ nhận tiền mặt,
+              nên bạn nên chuẩn bị sẵn để thuận tiện trong quá trình mua sắm.
+            </li>
+            <li>
+              Cởi mở với ẩm thực địa phương: Đừng ngần ngại thử những món ăn mới
+              lạ để khám phá hết hương vị đặc trưng của miền Tây.
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="conclusion">
+        <h3 class="loca-title">Tổng Kết</h3>
+        <section class="loca-content">
+          <p>
+            Cần Thơ không chỉ là điểm đến du lịch mà còn là một thiên đường ẩm
+            thực đặc sắc với vô vàn món ăn phong phú và không gian ẩm thực đa
+            dạng. Hãy để hành trình của bạn trở nên trọn vẹn hơn khi trải nghiệm
+            những món ăn mang đậm bản sắc miền Tây và cảm nhận sự thân thiện,
+            hiếu khách của người dân nơi đây!
+          </p>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <h3 class="footer-title">Group 3</h3>
+          <p class="footer-des">
+            Leader: Võ Minh Hiếu B2303811 <br />
+            Member: Lý Đặng Thành Đạt - <br />
+            Member: Nguyễn Công Chức - B2303800 <br />
+            Collage: CTU - Can Tho University <br />
+            Subject: Nhập môn lập trình Web - CT188
+          </p>
+        </div>
+        <div class="footer-wrapper">
+          <h3 class="footer-title">Kết nối</h3>
+          <ul class="footer-list">
+            <li>
+              <a href="">Facebook</a>
+            </li>
+            <li>
+              <a href="">Tiktok</a>
+            </li>
+            <li>
+              <a href="">Github</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-wrapper">
+          <h3 class="footer-title">Công nghệ</h3>
+          <ul class="footer-list">
+            <li>
+              <a href="">Boostrap</a>
+            </li>
+            <li>
+              <a href="">Jquery</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-wrapper">
+          <h3 class="footer-title">Slogan</h3>
+          <p class="footer-des">
+            1. Yêu tổ quốc yêu đồng bào. <br />
+            2. Học tập tốt, lao động tốt. <br />
+            3. Đoàn kết tốt, kỉ luật tốt. <br />
+            4. Giữ gìn vệ sinh thật tốt. <br />
+            5. Khiêm tốn, thật thà, dũng cảm. <br />
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- *javascripts -->
+    <!-- boostrap -->
+    <script src="../../vender/boostrap-5/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/locate.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+:root {
+    --normal-color: #e88c03;
+    --second-color: #f4f4f4;
+    --primary-color: #eeeeee;
+    --des-color: #ccdae8;
+    --sub-des-color: #f6b361;
+    --text-color: black;
+    --normal-shadow: 0 0 4px #0007;
+    --small-shadow: 0 0 2px #0006;
+    --big-shadow: 0 0 10px #0007;
+    --danger-color: red;
+    --info-color: #5ea8f1;
+    --success-color: rgb(37, 206, 19);
+    --warn-color: rgb(227, 151, 8);
+    --main-shadow: 0 0 4px #0008;
+}

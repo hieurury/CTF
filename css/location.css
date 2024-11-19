@@ -1,0 +1,122 @@
+.loca-main {
+  width: 80%;
+  margin: 0 auto;
+}
+/* Định dạng tiêu đề*/
+.instruction-mucluc-container,
+.loca-title,
+.loca-description {
+  text-align: left;
+}
+.intro-title {
+  text-align: center;
+}
+.loca-description {
+  text-align: justify;
+  line-height: 1.6;
+}
+/* Dịnh dạng ảnh*/
+.loca-content img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Định dạng cho danh sách */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+  line-height: 1.6;
+}
+#tips ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#tips ul li::before {
+  content: "\2713";
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Mục lục*/
+.instruction-mucluc-container {
+  margin-bottom: 20px;
+}
+
+.mucluc-container-toggle {
+  background-color: rgb(227, 151, 8);
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.mucluc-container-list {
+  display: none; /* Ẩn danh sách ban đầu */
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.mucluc-container-list li {
+  margin: 5px 0;
+  opacity: 0; /* Ban đầu các mục không hiển thị */
+  animation: slide-up 0.5s ease-out forwards;
+}
+
+.mucluc-container-list.show {
+  display: block;
+}
+
+/*các thẻ <a> trong mục lục */
+.mucluc-container-list a {
+  text-decoration: none;
+  color: #444;
+}
+
+.mucluc-container-list a:hover {
+  color: rgb(227, 151, 8);
+}
+
+/* Hiệu ứng chuyển động từ trên xuống */
+@keyframes slide-up {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Hiệu ứng chuyển động từ dưới lên khi thu gọn */
+@keyframes slide-down {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+/* Áp dụng hiệu ứng thu gọn khi mục lục bị ẩn */
+.mucluc-container-list.hide {
+  display: block;
+}
+
+.mucluc-container-list.hide li {
+  animation: slide-down 0.5s ease-in forwards;
+  animation-delay: 0s;
+}

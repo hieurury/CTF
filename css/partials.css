@@ -1,0 +1,209 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 12px;
+    background: var(--normal-color);
+    box-shadow: var(--main-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-menu {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-logo {
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 2px 4px #0008;
+    border-radius: 50%;
+    position: relative;
+}
+.nav-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.nav-name {
+    position: absolute;
+    font-weight: 700;
+    bottom: 10px;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+.menu-icon {
+    display: none;
+}
+ul.menu {
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+ul.menu li {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 4px 12px;
+    transition: background .2s linear;
+    cursor: pointer;
+}
+ul.menu li:hover {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+ul.menu li:hover > a {
+    color: var(--normal-color);
+}
+ul.menu li > a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* phần navbar search */
+ul.menu li:has(form):hover {
+    list-style-type: none;
+    background: transparent;
+}
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background: var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.search-wrapper input {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 6px;
+}
+
+/* *phần footer */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    background: var(--normal-color);
+    padding: 100px 0;
+    box-shadow: 0 0 4px #0005;
+}
+.footer-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: 600;
+}
+ul.footer-list li {
+    list-style-type: none;
+    text-align: center;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+ul.footer-list li:hover {
+    background: var(--primary-color);
+    cursor: pointer;
+}
+ul.footer-list li:hover > a {
+    color: var(--normal-color);
+}
+ul.footer-list li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--text-color);
+}
+.footer-des {
+    margin: 8px 0;
+    color: var(--text-color);
+}
+
+/* *Responsive */
+@media screen and (max-width: 550px) {
+    /* TODO: phần menu thu gọn */
+    .navbar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .nav-logo {
+        margin-left: 8px;
+    }
+    .nav-menu {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        position: relative;
+        width: 40%;
+        background: var(--normal-color);
+    }
+    .menu-icon {
+        display: block;
+        text-align: right;
+        z-index: 100;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        padding: 5px;
+        border-radius: 4px;
+        margin-right: 6px;
+    }
+    .menu-icon:hover {
+        background: var(--primary-color);
+    }
+    .menu-icon i {
+        font-size: 32px;
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+    .menu-icon:hover i {
+        color: var(--normal-color);
+    }
+    ul.menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 100;
+        background: var(--normal-color);
+        padding: 40px 8px;
+        /* transition: all .2s linear; */
+        border-radius: 2px;
+        /* margin-right: -100%; */
+        display: none;
+        box-shadow: var(--main-shadow);
+        align-items: normal;
+    }
+    ul.menu li {
+        margin: 8px 0;
+    }
+    ul.menu li a {
+        display: block;
+        font-size: 24px;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* TODO: phần footer */
+    .footer-container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    ul.footer-list li {
+        padding: 2px 12px;
+        text-align: left;
+    }
+}
+
+/* *các class hỗ trợ - chỉ dành cho partials*/
+.menu-header-display {
+    /* margin-right: 0 !important; */
+    display: flex !important;
+}
