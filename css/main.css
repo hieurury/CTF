@@ -1,9 +1,9 @@
 /* này là font chữ */
 @import url(./font.css);
 /* boostrap */
-@import url(../../vender/boostrap-5/css/bootstrap.min.css);
+@import url(../vender/boostrap-5/css/bootstrap.min.css);
 /* icons */
-@import url(../../vender/icons/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css);
+@import url(../vender/icons/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css);
 /* này là các biến cho thiết kế */
 @import url(./root.css);
 /* này là header và footer */
