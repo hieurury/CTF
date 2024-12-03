@@ -3,8 +3,14 @@ body {
 }
 
 h1,
-h2 {
+.content-title-nd {
   text-align: center;
+}
+.content-title-nd {
+  background-color: #e88c03;
+}
+.content-title {
+  padding-top: 6px;
 }
 .product-foods-list {
   display: flex;

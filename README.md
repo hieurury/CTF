@@ -13,24 +13,24 @@ _ĐỒ ÁN NHẬP MÔN LẬP TRÌNH WEB_
 2. **CHI TIẾT**
 
    - Trang web bao gồm:
-     1. [Trang chủ](./src/resources/index.html);
-     2. [Trang phản hồi](./src/resources/feedback.html);
-     3. [Trang Món ăn](./src/resources/foods.html);
-     4. [Trang đồ uống](./src/resources/drink.html);
-     5. [Trang tài khoản](./src/resources/auth.html);
-     6. [Trang sản phẩm yêu thích](./src/resources/me.html);
-     7. [Trang địa điểm](./src/resources/location.html);
+     1. [Trang chủ](./index.html);
+     2. [Trang phản hồi](./resources/feedback.html);
+     3. [Trang Món ăn](./resources/foods.html);
+     4. [Trang đồ uống](./resources/drink.html);
+     5. [Trang tài khoản](./resources/auth.html);
+     6. [Trang sản phẩm yêu thích](./resources/me.html);
+     7. [Trang địa điểm](./resources/location.html);
      8. _Thêm nếu có..._
    - Các tài nguyên:
      1. Nguồn ảnh được lấy từ internet hoặc dùng các công nghệ tạo ảnh
-        - [Ảnh được sử dụng](./src/img)
+        - [Ảnh được sử dụng](./img)
      2. CSS được viết thuần hoặc dùng các công nghệ
-        - [CSS thuần](./src/css/)
+        - [CSS thuần](./css/)
         - [Boostrap](./vender/boostrap-5/)
         - [Font chữ](./vender/fonts)
         - [Icons](./vender/icons)
      3. Javascript được viết thuần hoặc dùng các thư viện có sẵn
-        - [Javascript thuần](./src/js/)
+        - [Javascript thuần](./js/)
         - [Jquery](./vender/jquery/jquery-3.7.1.js)
 
 3. **CÁC CHỨC NĂNG**

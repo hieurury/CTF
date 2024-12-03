@@ -141,7 +141,7 @@ ul.footer-list li a {
 }
 
 /* *Responsive */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 860px) {
     /* TODO: phần menu thu gọn */
     .navbar {
         padding-left: 0;

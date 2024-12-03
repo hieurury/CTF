@@ -130,6 +130,10 @@ const mutipleLanguage = {
     en: "Favorite",
     vi: "Yêu thích",
   },
+  navVote: {
+    en: "Vote",
+    vi: "Bình chọn",
+  },
   navAccount: {
     en: "Account",
     vi: "Tài khoản",

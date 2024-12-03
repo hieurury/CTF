@@ -160,21 +160,33 @@ function validator(elementSelector, errorElement = ".group-message") {
       errorMessage = rules(inputValue);
     }
 
-    //nếu có lỗi sau khi validate thì thực hiện hiển thị lên UI
+    // lấy ra các thẻ input cần so sánh
+    const passwordInput = document.querySelector("#register-password");
+    const confirmPasswordInput = document.querySelector("#register-re-password");
+
     if (errorMessage) {
-      //tìm thẻ cha chính bằng hàm
+      // tìm thẻ cha chính bằng hàm và hiển thị lỗi
       const inputParent = getParent(input, errorElement);
       const inputBlock = inputParent.querySelector(".input-wrapper");
-
-      //xác định nơi hiện message lỗi
       const errorGroup = inputParent.querySelector(errorElement);
 
-      //hiển thị giao diện
       errorGroup.innerText = errorMessage;
       inputBlock.classList.add("invalid");
+      return false;
     }
 
-    return !errorMessage;
+    // so sánh 2 trường password và confirm password
+    if (passwordInput && confirmPasswordInput && passwordInput.value !== confirmPasswordInput.value) {
+      const inputParent = getParent(confirmPasswordInput, errorElement);
+      const inputBlock = inputParent.querySelector(".input-wrapper");
+      const errorGroup = inputParent.querySelector(errorElement);
+
+      errorGroup.innerText = "Mật khẩu không khớp";
+      inputBlock.classList.add("invalid");
+      return false;
+    }
+
+    return true;
   }
 
   function radioHandler() {
@@ -236,7 +248,9 @@ function validator(elementSelector, errorElement = ".group-message") {
     console.log(formSelector);
 
     if (result) {
-      formSelector.submit();
+      // formSelector.submit();
+      alert("Đăng ký thành công");
+      window.location.reload();
     }
   };
 }

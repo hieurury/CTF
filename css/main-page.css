@@ -214,7 +214,7 @@ span.emote-wrapper i {
 }
 
 /* về mobile */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 860px) {
     /* *left layout */
     .left-layout {
         height: auto;
