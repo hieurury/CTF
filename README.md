@@ -32,30 +32,20 @@ _ĐỒ ÁN NHẬP MÔN LẬP TRÌNH WEB_
      3. Javascript được viết thuần hoặc dùng các thư viện có sẵn
         - [Javascript thuần](./src/js/)
         - [Jquery](./vender/jquery/jquery-3.7.1.js)
-     4. Dữ liệu người dùng được sử dụng thông qua localStorage hoặc json
-        - [Dữ liệu json](./src/json/)
 
 3. **CÁC CHỨC NĂNG**
    - Chức năng về form:
      1. Đăng kí []
         - validate thông tin đăng kí []
         - xác nhận nhập lại mật khẩu []
-        - xác nhận người dùng đã tồn tại []
-          1. cách 1: [file json](./src/json/users.json)
-          2. cách 2: local storage.
      2. Đăng nhập []
         - validate thông tin đăng nhập []
-        - xác minh tài khoản và mật khẩu từ dữ liệu tại []
-          1. cách 1: [file json](./src/json/users.json)
-          2. cách 2: local storage.
      3. Gửi mail cảm ơn phản hồi
         - validate form phản hồi []
-        - sau khi người dùng gửi phản hồi, gửi mail cảm ơn lại vào mail của người dùng []
-          - nếu thấy gửi mail khó quá thì chỉ cần hiện 1 modal cảm ơn là được []
+        - sau khi người dùng gửi phản hồi hiện modal cảm ơn []
      4. Thêm đối tượng yêu thích (thức ăn, nước uống, địa điểm,....)
         - bấm vào nút thích trên 1 đối tượng thì in đậm biểu tượng icon lên []
-        - sau khi thích thì lưu đối tượng đó vào dữ liệu của người dùng hiện tại []
-        - nếu chưa đăng nhập thì bắt người dùng đăng nhập để được thích []
+        - sau khi thích thì lưu đối tượng đó vào localstorage []
         - những đối tượng đã được thích thì nút tim sẽ được hiện đỏ []
         - khi bỏ thích thì xoá đối tượng khỏi dữ liệu và đổi biểu tượng nút thích lại []
 4. **Responsive**

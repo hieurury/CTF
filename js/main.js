@@ -74,26 +74,29 @@ emoteContainers.forEach((emote) => {
 const dataLocalStorage = JSON.parse(
   window.localStorage.getItem("favoriteProducts")
 );
-emoteContainers.forEach((emote) => {
-  //tìm thẻ section cha của biểu cảm hiện tại
-  const emoteParent = findParentContainer(emote);
-  //lấy tên của từng sản phẩm
-  const nameProduct = emoteParent.querySelector(".content-title").innerText;
-  //tìm sản phẩm đó có trong local storage không
-  const isStorage = dataLocalStorage.find(
-    (product) => product.name === nameProduct
-  );
-  //nếu sản phẩm có trong localStorage thì hiện tim lên
-  if (isStorage) {
-    const emoteOn = emote.querySelector(".emote-on");
-    const emoteOff = emote.querySelector(".emote-off");
-
-    if (emoteOn.classList.contains("d-none")) {
-      emoteOn.classList.remove("d-none");
-      emoteOff.classList.add("d-none");
+//nếu có dữ liệu trong localStorage thì hiện thị lên
+if(dataLocalStorage) {
+  emoteContainers.forEach((emote) => {
+    //tìm thẻ section cha của biểu cảm hiện tại
+    const emoteParent = findParentContainer(emote);
+    //lấy tên của từng sản phẩm
+    const nameProduct = emoteParent.querySelector(".content-title").innerText;
+    //tìm sản phẩm đó có trong local storage không
+    const isStorage = dataLocalStorage.find(
+      (product) => product.name === nameProduct
+    );
+    //nếu sản phẩm có trong localStorage thì hiện tim lên
+    if (isStorage) {
+      const emoteOn = emote.querySelector(".emote-on");
+      const emoteOff = emote.querySelector(".emote-off");
+  
+      if (emoteOn.classList.contains("d-none")) {
+        emoteOn.classList.remove("d-none");
+        emoteOff.classList.add("d-none");
+      }
     }
-  }
-});
+  });
+}
 console.log(dataLocalStorage);
 
 //TODO: phần partials (header và footer)
@@ -104,6 +107,88 @@ menuIcon.addEventListener("click", () => {
   menuList.classList.toggle("menu-header-display");
   console.log(menuList.classList);
 });
+
+// TODO: phần đa ngôn ngữ
+const mutipleLanguage = {
+  navHome: {
+    en: "Home",
+    vi: "Trang chủ",
+  },
+  navFoods: {
+    en: "Foods",
+    vi: "Món ăn",
+  },
+  navDrinks: {
+    en: "Drinks",
+    vi: "Đồ uống",
+  },
+  navFeedback: {
+    en: "Feedback",
+    vi: "Phản hồi",
+  },
+  navFavorite: {
+    en: "Favorite",
+    vi: "Yêu thích",
+  },
+  navAccount: {
+    en: "Account",
+    vi: "Tài khoản",
+  },
+  navLocate: {
+    en: "Locate",
+    vi: "Địa điểm",
+  },
+  menuFoods: {
+    en: "Foods",
+    vi: "Thực phẩm",
+  },
+  menuDrinks: {
+    en: "Drinks",
+    vi: "Đồ uống",
+  },
+  menuSpecial: {
+    en: "Special",
+    vi: "Đặc sản",
+  },
+  menuRedirect: {
+    en: "Redirect",
+    vi: "Điều hướng",
+  },
+  footGroup: {
+    en: "Group 3",
+    vi: "Nhóm 3",
+  },
+  footConnect: {
+    en: "Connect",
+    vi: "Kết nối",
+  },
+  footTech: {
+    en: "Technology",
+    vi: "Công nghệ",
+  },
+  footSlogan: {
+    en: "Slogan",
+    vi: "Khẩu hiệu",
+  },
+}
+const mutipleLangElements = document.querySelectorAll(".mutipleLang");
+const languagesOption = document.querySelectorAll('ul.languages li');
+console.log(mutipleLangElements);
+//hàm thay đổi ngôn ngữ
+setlanguage = (language) => {
+  mutipleLangElements.forEach((element) => {
+    console.log(element);
+    const key = element.id;
+    element.innerText = mutipleLanguage[key][language];
+  });
+}
+//nút chuyển ngôn ngữ
+languagesOption.forEach((option) => {
+  option.addEventListener('click', () => {
+    const language = option.id;
+    setlanguage(language);
+  });
+}); 
 
 
 
