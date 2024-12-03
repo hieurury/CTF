@@ -154,6 +154,14 @@ const mutipleLanguage = {
     en: "Redirect",
     vi: "Điều hướng",
   },
+  menuLocate: {
+    en: "Locate",
+    vi: "Địa điểm",
+  },
+  mainView: {
+    en: "View all",
+    vi: "Xem tất cả",
+  },
   footGroup: {
     en: "Group 3",
     vi: "Nhóm 3",
@@ -170,6 +178,14 @@ const mutipleLanguage = {
     en: "Slogan",
     vi: "Khẩu hiệu",
   },
+  menuPopular: {
+    en: "Popular",
+    vi: "Phổ biến",
+  },
+  menuSnacks: {
+    en: "Snacks",
+    vi: "Đồ ăn vặt",
+  },
 }
 const mutipleLangElements = document.querySelectorAll(".mutipleLang");
 const languagesOption = document.querySelectorAll('ul.languages li');
@@ -178,7 +194,7 @@ console.log(mutipleLangElements);
 setlanguage = (language) => {
   mutipleLangElements.forEach((element) => {
     console.log(element);
-    const key = element.id;
+    const key = element.getAttribute('element-lang');
     element.innerText = mutipleLanguage[key][language];
   });
 }
@@ -187,8 +203,21 @@ languagesOption.forEach((option) => {
   option.addEventListener('click', () => {
     const language = option.id;
     setlanguage(language);
+    localStorage.setItem('language', language);
   });
 }); 
+//auto set 
+function autoSetLanguage() {
+    const langStorage = window.localStorage.getItem('language');
+    if(langStorage) {
+      setlanguage(langStorage);
+    } else {
+      localStorage.setItem('language', 'vi');
+      setlanguage('vi');
+    }
+}
+window.onload = autoSetLanguage();
+
 
 
 
