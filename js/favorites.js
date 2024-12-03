@@ -13,7 +13,7 @@ if (favoriteProducts.length === 0) {
     // Hiển thị các sản phẩm yêu thích
     favoriteProducts.forEach(product => {
         const productItem = document.createElement('div');
-        productItem.classList.add('product-item');
+        productItem.classList.add('favorite-item');
 
         productItem.innerHTML = `
             <img src="${product.img}" alt="${product.name}">

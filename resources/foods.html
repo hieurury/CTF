@@ -8,58 +8,65 @@
     <title>Món ăn</title>
   </head>
   <body>
-    <head>
+    <header>
       <nav class="navbar">
-        <a href="../index.html" class="nav-logo">
-          <img src="../img/logo-1.jpg" alt="" />
-          <span class="nav-name">CTF</span>
-        </a>
-        <div class="nav-menu">
-          <div class="menu-icon">
-            <i class="bi bi-list"></i>
+          <a href="../index.html" class="nav-logo">
+              <img src="../img/logo-1.jpg" alt="">
+              <span class="nav-name">CTF</span>
+          </a>
+          <div class="nav-menu">
+              <div class="menu-icon">
+                  <i class="bi bi-list"></i>
+              </div>
+              <ul class="menu">
+                  <li>
+                      <form action="#" method="GET" class="navbar-search">
+                          <label for="navbar-search" class="search-wrapper">
+                              <i class="bi bi-search"></i>
+                              <input id="navbar-search" type="search" placeholder="Nhập từ khoá" autocomplete="off">
+                          </label>
+                      </form>
+                  </li>
+                  <li>
+                      <a href="../resources/foods.html">
+                          <span id="navFoods" class="mutipleLang">Món ăn</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="../resources/drinks.html">
+                          <span id="navDrinks" class="mutipleLang">Đồ uống</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="../resources/locate.html">
+                          <span id="navLocate" class="mutipleLang">Địa điểm</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="../resources/feedback.html">
+                          <span id="navFeedback" class="mutipleLang">Phản hồi</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="../resources/favorite.html">
+                          <i class="bi bi-heart-fill emote-off"></i>
+                          <span id="navFavorite" class="mutipleLang">Yêu thích</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="../resources/auth.html">
+                          <i class="bi bi-person-circle"></i>
+                          <span id="navAccount" class="mutipleLang">Tài khoản</span>
+                      </a>
+                  </li>
+                  <ul class="languages">
+                      <li id="vi"><img src="../img/Flag_of_Vietnam.svg.png" alt=""></li>
+                      <li id="en"><img src="../img/Flag_of_the_United_States.png" alt=""></li>
+                  </ul>
+              </ul>
           </div>
-          <ul class="menu">
-            <li>
-              <form action="#" method="GET" class="navbar-search">
-                <label for="navbar-search" class="search-wrapper">
-                  <i class="bi bi-search"></i>
-                  <input
-                    id="navbar-search"
-                    type="search"
-                    placeholder="Nhập từ khoá"
-                    autocomplete="off"
-                  />
-                </label>
-              </form>
-            </li>
-            <li>
-              <a href="foods.html">Món ăn</a>
-            </li>
-            <li>
-              <a href="drinks.html">Thức uống</a>
-            </li>
-            <li>
-              <a href="locate.html">Địa điểm</a>
-            </li>
-            <li>
-              <a href="./feedback.html">Phản hổi</a>
-            </li>
-            <li>
-              <a href="favorite.html">
-                <i class="bi bi-heart-fill emote-off"></i>
-                <span>Yêu thích</span>
-              </a>
-            </li>
-            <li>
-              <a href="auth.html">
-                <i class="bi bi-person-circle"></i>
-                <span>Tài khoản</span>
-              </a>
-            </li>
-          </ul>
-        </div>
       </nav>
-    </head>
+  </header>
     <main>
       <h1>Món Ngon Cần Thơ</h1>
 
@@ -524,53 +531,61 @@
     </main>
     <footer>
       <div class="footer-container">
-        <div class="footer-wrapper">
-          <h3 class="footer-title">Group 3</h3>
-          <p class="footer-des">
-            Leader: Võ Minh Hiếu B2303811 <br />
-            Member: Lý Đặng Thành Đạt - <br />
-            Member: Nguyễn Công Chức - B2303800 <br />
-            Collage: CTU - Can Tho University <br />
-            Subject: Nhập môn lập trình Web - CT188
-          </p>
-        </div>
-        <div class="footer-wrapper">
-          <h3 class="footer-title">Kết nối</h3>
-          <ul class="footer-list">
-            <li>
-              <a href="">Facebook</a>
-            </li>
-            <li>
-              <a href="">Tiktok</a>
-            </li>
-            <li>
-              <a href="">Github</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-wrapper">
-          <h3 class="footer-title">Công nghệ</h3>
-          <ul class="footer-list">
-            <li>
-              <a href="">Boostrap</a>
-            </li>
-            <li>
-              <a href="">Jquery</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-wrapper">
-          <h3 class="footer-title">Slogan</h3>
-          <p class="footer-des">
-            1. Yêu tổ quốc yêu đồng bào. <br />
-            2. Học tập tốt, lao động tốt. <br />
-            3. Đoàn kết tốt, kỉ luật tốt. <br />
-            4. Giữ gìn vệ sinh thật tốt. <br />
-            5. Khiêm tốn, thật thà, dũng cảm. <br />
-          </p>
-        </div>
+          <div class="footer-wrapper">
+              <h3 class="footer-title">
+                  <span id="footGroup" class="mutipleLang">Nhóm 3</span>
+              </h3>
+              <p class="footer-des">
+                  Leader: Võ Minh Hiếu - B2303811 <br>
+                  Member: Lý Đặng Thành Đạt - B2305566 <br>
+                  Member: Nguyễn Công Chức - B2303800 <br>
+                  Collage: CTU - Can Tho University <br>
+                  Subject: Nhập môn lập trình Web - CT188
+              </p>
+          </div>
+          <div class="footer-wrapper">
+              <h3 class="footer-title">
+                  <span id="footConnect" class="mutipleLang">Kết nối</span>
+              </h3>
+              <ul class="footer-list">
+                  <li>
+                      <a href="">Facebook</a>
+                  </li>
+                  <li>
+                      <a href="">Tiktok</a>
+                  </li>
+                  <li>
+                      <a href="">Github</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="footer-wrapper">
+              <h3 class="footer-title">
+                  <span id="footTech" class="mutipleLang">Công nghệ</span>
+              </h3>
+              <ul class="footer-list">
+                  <li>
+                      <a href="">Boostrap</a>
+                  </li>
+                  <li>
+                      <a href="">Jquery</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="footer-wrapper">
+              <h3 class="footer-title">
+                  <span id="footSlogan" class="mutipleLang">Khẩu hiệu</span>
+              </h3>
+              <p class="footer-des">
+                  1. Yêu tổ quốc yêu đồng bào. <br>
+                  2. Học tập tốt, lao động tốt. <br>
+                  3. Đoàn kết tốt, kỉ luật tốt. <br>
+                  4. Giữ gìn vệ sinh thật tốt. <br>
+                  5. Khiêm tốn, thật thà, dũng cảm. <br>
+              </p>
+          </div>
       </div>
-    </footer>
+  </footer>
 
     <!-- *javascripts -->
     <!-- boostrap -->

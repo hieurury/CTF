@@ -1,7 +1,7 @@
 
 
 /* Phần danh sách yêu thích */
-.product-list {
+.favorite-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start; /* Các sản phẩm xếp từ bên trái */
@@ -11,7 +11,7 @@
 }
 
 /* Phần tử sản phẩm */
-.product-item {
+.favorite-item {
     width: 180px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -24,7 +24,7 @@
 }
 
 /* Ảnh sản phẩm */
-.product-item img {
+.favorite-item img {
     width: 100%;
     height: 150px;
     object-fit: cover;
@@ -32,7 +32,7 @@
 }
 
 /* Tên sản phẩm */
-.product-item .product-name {
+.favorite-item .product-name {
     font-size: 14px;
     font-weight: bold;
     color: #333;
@@ -40,14 +40,14 @@
 }
 
 /* Thời gian yêu thích */
-.product-item .product-time {
+.favorite-item .product-time {
     font-size: 10px;
     color: #888;
     margin-top: 4px;
 }
 
 /* Nút bỏ thích */
-.product-item .remove-btn {
+.favorite-item .remove-btn {
     background-color: #ff4d4d;
     color: white;
     border: none;
@@ -65,11 +65,11 @@
 }
 
 /* Icon trong nút bỏ thích */
-.product-item .remove-btn i {
+.favorite-item .remove-btn i {
     font-size: 16px;
 }
 
 /* Hiệu ứng khi hover vào nút bỏ thích */
-.product-item .remove-btn:hover {
+.favorite-item .remove-btn:hover {
     background-color: #ff0000;
 }
