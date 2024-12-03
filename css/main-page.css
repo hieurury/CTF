@@ -241,6 +241,10 @@ span.emote-wrapper i {
     .title-location:hover i {
         transform: translateX(4px);
     }
+    /* right layout */
+    .slide-wrapper {
+        height: 250px;
+    }
 
     /* *phần controls */
     .wrapper-controls > span.emote-wrapper i {
