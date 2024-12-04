@@ -12,7 +12,7 @@
 
 /* Phần tử sản phẩm */
 .favorite-item {
-    width: 180px;
+    width: 200px;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 8px;
@@ -37,6 +37,7 @@
     font-weight: bold;
     color: #333;
     margin-top: 8px;
+    text-align: center;
 }
 
 /* Thời gian yêu thích */
@@ -72,4 +73,29 @@
 /* Hiệu ứng khi hover vào nút bỏ thích */
 .favorite-item .remove-btn:hover {
     background-color: #ff0000;
+}
+@media screen and (max-width: 860px) {
+    .favorite-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; /* Các sản phẩm xếp từ bên trái */
+        padding: 15px;
+        gap: 0;
+        align-items: flex-start;    /* Các sản phẩm sẽ căn lên phía trên */
+    }
+    
+    /* Phần tử sản phẩm */
+    .favorite-item {
+        flex: 0 0 45%;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 8px;
+        margin: 4px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-bottom: 10px;
+    }
+    
 }

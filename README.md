@@ -8,7 +8,6 @@ _ĐỒ ÁN NHẬP MÔN LẬP TRÌNH WEB_
      - Đặc sản vùng
      - Địa điểm ăn uống nổi tiếng
      - map chỉ đường
-     - _Thêm nếu có..._
 
 2. **CHI TIẾT**
 
